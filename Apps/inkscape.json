@@ -1,0 +1,10 @@
+{
+  "name": "Inkscape",
+  "description": "Whether you are an illustrator, designer, web designer or just someone who needs to create some vector imagery, Inkscape is for you!",
+  "version": "1.4.0",
+  "url": "https://media.inkscape.org/dl/resources/file/Inkscape-1.4.028868_arm64.dmg",
+  "bundleId": "org.inkscape.Inkscape",
+  "homepage": "https://inkscape.org/",
+  "fileName": "Inkscape-1.4.028868_arm64.dmg",
+  "previous_version": "1.3"
+}

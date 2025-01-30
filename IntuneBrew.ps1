@@ -15,7 +15,7 @@
     Date           : 2024-10-27
 
 .LINK
-    https://github.com/ugurkocde/IntuneBrew
+    https://github.com/jeremyputman/IntuneBrew
 
 .EXAMPLE
     .\IntuneBrew.ps1
@@ -34,8 +34,8 @@ Write-Host "Made by Ugur Koc with" -NoNewline; Write-Host " ❤️  and ☕" -No
 Write-Host " | Version" -NoNewline; Write-Host " 0.3 Public Preview" -ForegroundColor Yellow -NoNewline
 Write-Host " | Last updated: " -NoNewline; Write-Host "2024-10-27" -ForegroundColor Magenta
 Write-Host ""
-Write-Host "This is a preview version. If you have any feedback, please open an issue at https://github.com/ugurkocde/IntuneBrew/issues. Thank you!" -ForegroundColor Cyan
-Write-Host "You can sponsor the development of this project at https://github.com/sponsors/ugurkocde" -ForegroundColor Red
+Write-Host "This is a preview version. If you have any feedback, please open an issue at https://github.com/jeremyputman/IntuneBrew/issues. Thank you!" -ForegroundColor Cyan
+Write-Host "You can sponsor the development of this project at https://github.com/sponsors/jeremyputman" -ForegroundColor Red
 Write-Host ""
 
 
@@ -109,7 +109,7 @@ Write-Host "All required permissions are present." -ForegroundColor Green
 Import-Module Microsoft.Graph.Authentication
 
 # Fetch supported apps from GitHub repository
-$supportedAppsUrl = "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/refs/heads/main/supported_apps.json"
+$supportedAppsUrl = "https://raw.githubusercontent.com/jeremyputman/IntuneBrew/refs/heads/main/supported_apps.json"
 $githubJsonUrls = @()
 
 try {
@@ -352,7 +352,7 @@ function Is-ValidUrl {
         [string]$url
     )
 
-    if ($url -match "^https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/.*\.json$") {
+    if ($url -match "^https://raw.githubusercontent.com/jeremyputman/IntuneBrew/main/Apps/.*\.json$") {
         return $true
     }
     else {
@@ -460,7 +460,7 @@ function Add-IntuneAppLogo {
     try {
         # Construct the logo URL - only replace spaces with underscores
         $logoFileName = $appName.ToLower().Replace(" ", "_") + ".png"
-        $logoUrl = "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/$logoFileName"
+        $logoUrl = "https://raw.githubusercontent.com/jeremyputman/IntuneBrew/main/Logos/$logoFileName"
 
         # For debugging
         Write-Host "Downloading logo from: $logoUrl" -ForegroundColor Gray
